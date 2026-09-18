@@ -85,6 +85,25 @@
       max-height: 200px;
       opacity: 1;
     }
+    /* Our Services section */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .service {
+      background: #eef2ff;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+    }
+    .service .icon {
+      font-size: 2rem;
+    }
+    .service h3 {
+      margin: 8px 0;
+      color: #1e3a8a;
+    }
   </style>
 </head>
 <body>
@@ -107,6 +126,27 @@
     <div class="card">
       <h2>About this site</h2>
       <p>This is a practice website. I use it to learn the full cycle: Claude edits the files on my computer, I review the change, push it to GitHub, and the live site updates.</p>
+    </div>
+
+    <div class="card">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <div class="icon">&#127760;</div>
+          <h3>Website Care</h3>
+          <p>Updates, fixes and new pages, handled quickly and safely.</p>
+        </div>
+        <div class="service">
+          <div class="icon">&#9997;</div>
+          <h3>Blog Content</h3>
+          <p>Fresh articles with custom images, published every week.</p>
+        </div>
+        <div class="service">
+          <div class="icon">&#127916;</div>
+          <h3>AI Video</h3>
+          <p>Short animated stories and cinematic product videos.</p>
+        </div>
+      </div>
     </div>
 
     <div class="card">
